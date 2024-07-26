@@ -42,7 +42,7 @@ def prepare(deg_video, ref_video, tmp_dir):
     if not os.path.exists(deg_video):
         raise ValueError(f"Deg video not found! Path: {deg_video}")
     shutil.rmtree(tmp_dir, ignore_errors=True)
-    os.makedirs(tmp_dir)    
+    #os.makedirs(tmp_dir)    
     sub_dirs = ["ref_img_dir", "aligned_ref_img_dir"]
     for sub_dir in sub_dirs:
         tmp_sub_dir = os.path.join(tmp_dir, sub_dir)
